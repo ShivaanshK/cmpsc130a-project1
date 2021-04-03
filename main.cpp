@@ -36,7 +36,7 @@ int main()
             string person;
             cout << "Person's name:" << endl;
             getline(cin,person);
-            cout << blockchain.getBalance(person) << endl;
+            cout << to_string(blockchain.getBalance(person)) << endl;
             continue;
         } else if(input == "3"){
             blockchain.print();

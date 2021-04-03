@@ -82,6 +82,7 @@ public:
                 balance += temp->transaction.getAmount();
             else if (temp->transaction.getSender() == person)
                 balance -= temp->transaction.getAmount();
+            temp = temp->prev_hash_ptr;
         }
         return balance;
     }
